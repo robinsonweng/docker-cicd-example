@@ -2,8 +2,8 @@ name: CI to docker hub
 
 on:
   push:
-    branches: [ master ]
-
+    tags:
+      - "v*.*.*"
 jobs:
   build:
     runs-on: ubuntu-latest
